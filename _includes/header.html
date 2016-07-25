@@ -1,0 +1,29 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<header>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">Saider</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li {% if page.url == '/' %}class='active'{% endif %}><a href="/">Top</a></li>
+          <li {% if page.url == '/server' %}class='active'{% endif %}><a href="/server">Server</a></li>
+          <li><a href="https://github.com/NKMR6194/saider/releases">Download</a></li>
+          <li><a href="https://github.com/NKMR6194/saider">GitHub</a></li>
+        </ul>
+        <div class="nav navbar-form navbar-right">
+          <div class="form-group">
+            <a href="https://twitter.com/intent/tweet?url=http://saider.net/&text=Saider%20%e3%83%9c%e3%82%a4%e3%82%bb%e5%8b%a2%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e3%82%aa%e3%83%b3%e3%83%a9%e3%82%a4%e3%83%b3%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e6%94%af%e6%8f%b4%e3%83%84%e3%83%bc%e3%83%ab" class="btn btn-twitter"><i class="fa fa-twitter fa-lg"></i> Tweet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

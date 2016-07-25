@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1><img class="logo" src="/image/logo.png"></h1>
+        <p>ボイセ勢のためのオンラインセッション支援ツール</p>
+        <div class="try">
+          <a href="server" class="btn btn-primary btn-lg">
+            <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+            Try Now
+          </a>
+        </div>
+        <div class="version">Latest version {{ site.version }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 ">
+        <h2 class="point-head">Saiderはボイスセッションのためのオンセツールです</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6 point">
+        <div class="point-circle">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+        </div>
+        <h3>Easy to start</h3>
+        <p>PCのWebブラウザさえあれば、公開サーバーにアクセスするだけで、何もダウンロードすることなく使うことができます。</p>
+      </div>
+      <div class="col-md-4 col-sm-6 point">
+        <div class="point-circle">
+          <i class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+        <h3>Focus on Voice session</h3>
+        <p>ダイス・メモ・マップ・コマと、ボイスセッションに必要なものだけを提供しています。テキストチャット機能はつけていません。</p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 point">
+        <div class="point-circle">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
+        <h3>Open source</h3>
+        <p>ソースコードは全てGitHubで公開されています。自分のプレイスタイルに合わせてダイスボットをカスタマイズすることも可能です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-inverse dicebot">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 dicebot">
+        <h2>ダイスボット対応システム</h2>
+        <ul>
+          {% for dicebot in site.dicebots %}
+            <li>{{ dicebot }}</li>
+          {% endfor %}
+        </ul>
+        <p>今後、続々対応予定</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>製作者</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <img class="icon pull-right" src="/image/NKMR6194.png">
+      </div>
+      <div class="col-xs-6">
+        <h3>酒田　シンジ</h3>
+        <p><a href="https://sakasin.net">sakasin.net</a></p>
+        <p><a href="https://twitter.com/NKMR6194">Twitter</a></p>
+      </div>
+    </div>
+  </div>
+</section>

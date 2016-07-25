@@ -1,0 +1,106 @@
+@import "buttons.scss";
+
+$brand-twitter: #55acee;
+
+body {
+    padding-top: 80px;
+}
+
+.btn-twitter .fa.fa-lg {
+  margin-right: 2px;
+  vertical-align: -1px;
+}
+
+.btn-twitter {
+    @include button-variant(#fff, $brand-twitter, darken($brand-twitter, 2%));
+}
+
+.jumbotron {
+    background-color: lighten($saider-blue, 25%);
+    text-align: center;
+    margin: 0;
+
+    .try {
+        margin: 36px auto 12px auto;
+    }
+
+    p, .version {
+        color: #666;
+    }
+}
+
+section {
+    padding: 36px 0 48px 0;
+
+    &.section-default {
+        background-color: #fff;
+    }
+
+    &.section-inverse {
+        background-color: lighten($saider-blue, 27%);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+}
+
+.point {
+    h3 {
+        text-align: center;
+    }
+
+    .point-head {
+        margin-bottom: 48px;
+    }
+
+    .point-circle {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 60px;
+        line-height: 100px;
+        color: #fff;
+        border-radius: 100%;
+        background-color: $saider-blue;
+    }
+}
+
+.dicebot {
+    text-align: center;
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0.1em 0.5em;
+    }
+}
+
+.icon {
+    max-width:150px;
+}
+
+.server {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 0 24px;
+
+    img{
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
