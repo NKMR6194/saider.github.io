@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Saiderはボイスセッションのためのオンセツールです
 url: "http://saider.net"
 dicebots: ["クトゥルフ神話TRPG"]
-version: "v0.5.0"
+version: "v0.6.0"
 
 # Build settings
 markdown: kramdown
