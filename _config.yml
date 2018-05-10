@@ -9,7 +9,7 @@
 title: Saider
 description: > # this means to ignore newlines until "baseurl:"
   Saiderはボイスセッションのためのオンセツールです
-url: "http://saider.net"
+url: "https://saider.net"
 dicebots: ["クトゥルフ神話TRPG"]
 version: "v0.6.0"
 
